@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
+
     <link rel="stylesheet" href="resetCss.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -12,15 +13,51 @@
     <script src="testController.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li> <a id= 'home'>Home</a> </li>
-                <li> <a>Button 2</a> </li>
-                <li> <a>Button 3</a> </li>                
+                <li>
+                    <a id='home'>Home</a>
+                </li>
+                <li>
+                    <a>Button 2</a>
+                </li>
+                <li>
+                    <a>Button 3</a>
+                </li>
             </ul>
         </nav>
     </header>
+    <section id='weatherInformation'>
+        <label for="city">Въведете град</label>
+        <input name="city" id='city' type="text">
+        <button id="enterCity">Въведи</button>
+        <div id='infoWraper'>
+            <h1 id='cityName'></h1>
+            <p id='weatherDescription'></p>
+            <p id='weatherTemps'></p>
+            <button id='seeForecast'>Прогноза за следващите дни</button>
+        </div>
+        <div id='forecast'>
+            <div class='dayOfForecast'>
+                <img id="imgDayOne" src="" alt="dayOneImg">
+                <h3 id='dayOne'></h3>
+                <p id='dayOneTemp'></p>
+            </div>
+            <div class='dayOfForecast'>
+                <img id="imgDayTwo" src="" alt="dayTwoImg">
+                <h3 id='dayTwo'></h3>
+                <p id='dayTwoTemp'></p>
+            </div>
+            <div class='dayOfForecast'>
+                <img id="imgDayThree" src="" alt="dayThreeImg">
+                <h3 id='dayThree'></h3>
+                <p id='dayThreeTemp'></p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
