@@ -1,0 +1,26 @@
+header {
+    background-color: blue;
+    color: white;
+    height: 50px; 
+    box-sizing: border-box;
+}
+nav {
+    padding-top: 5px;
+}
+
+li {
+    display: inline-block;
+    width: 10em;
+}
+li a {
+     font-size: 2em;
+     cursor: pointer;   
+}
+li a:hover {
+    background-color: black;
+}
+
+ul {
+    vertical-align: middle;
+    text-align: center;
+}
