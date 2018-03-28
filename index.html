@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
+
     <link rel="stylesheet" href="resetCss.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -12,15 +13,43 @@
     <script src="testController.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li> <a id= 'home'>Home</a> </li>
-                <li> <a>Button 2</a> </li>
-                <li> <a>Button 3</a> </li>                
+                <li>
+                    <a id='home'>Home</a>
+                </li>
+                <li>
+                    <a>Button 2</a>
+                </li>
+                <li>
+                    <a>Button 3</a>
+                </li>
             </ul>
         </nav>
     </header>
+    <section id='weather-information'>
+        <label for="city">Въведете град</label>
+        <input name="city" id='city' type="text">
+        <button id="enter-city">Въведи</button>
+        <div id='info-wrapper'>
+            <h1 id='city-name'></h1>
+            <p id='weather-description'></p>
+            <p id='weather-temps'></p>
+            <select name="days-for-forecast" id="days-for-forecast">
+                <option value="1">1 ден</option>
+                <option value="2">2 дни</option>
+                <option value="3">3 дни</option>
+                <option value="4">4 дни</option>
+                <option value="5">5 дни</option>
+            </select>
+            <button id='see-forecast'>Прогноза за следващите дни</button>
+        </div>
+        <div id='forecast'></div>
+        </div>
+    </section>
 </body>
+
 </html>
