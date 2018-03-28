@@ -1,6 +1,8 @@
-var OPENWEATHER_KEY = '3ae077bc411e863a6ab7ead0fcacdb38';
-var API_URL = 'http://api.openweathermap.org';
-var KELVIN_CONSTANT = 273.15;
+const OPENWEATHER_KEY = '&appid=3ae077bc411e863a6ab7ead0fcacdb38';
+const API_URL = 'http://api.openweathermap.org';
+const KELVIN_CONSTANT = 273.15;
+const TODAY_WEATHER_ROUTE = '/data/2.5/weather?q=';
+const FORECAST_ROUTE = '/data/2.5/forecast?q='
 
 function getWeather(weatherURL) {
     return new Promise(function (resolve, reject) {

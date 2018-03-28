@@ -38,24 +38,16 @@
             <h1 id='city-name'></h1>
             <p id='weather-description'></p>
             <p id='weather-temps'></p>
+            <select name="days-for-forecast" id="days-for-forecast">
+                <option value="1">1 ден</option>
+                <option value="2">2 дни</option>
+                <option value="3">3 дни</option>
+                <option value="4">4 дни</option>
+                <option value="5">5 дни</option>
+            </select>
             <button id='see-forecast'>Прогноза за следващите дни</button>
         </div>
-        <div id='forecast'>
-            <div class='days-forecast'>
-                <img id="img-day-one" src="" alt="dayOneImg">
-                <h3 id='day-one'></h3>
-                <p id='day-one-temp'></p>
-            </div>
-            <div class='days-forecast'>
-                <img id="img-day-two" src="" alt="dayTwoImg">
-                <h3 id='day-two'></h3>
-                <p id='day-two-temp'></p>
-            </div>
-            <div class='days-forecast'>
-                <img id="img-day-three" src="" alt="dayThreeImg">
-                <h3 id='day-three'></h3>
-                <p id='day-three-temp'></p>
-            </div>
+        <div id='forecast'></div>
         </div>
     </section>
 </body>
