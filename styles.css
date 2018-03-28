@@ -1,8 +1,9 @@
 header {
-    background-color: blue;
-    color: white;
     height: 50px; 
     box-sizing: border-box;
+    
+    color: white;
+    background-color: blue;
 }
 nav {
     padding-top: 5px;
@@ -25,23 +26,25 @@ ul {
     text-align: center;
 }
 
-#weatherInformation {
-    text-align: center;
+#weather-information {
     box-sizing: border-box;
     padding-top: 10px;
+
+    text-align: center;
 }
 
-#infoWraper {
+#info-wrapper {
     display: none;
-    background-color: silver;
     padding: 10px 0px;
     box-sizing: border-box;
+
+    background-color: silver;
 }
 
-.dayOfForecast {
-    margin-top: 20px;
+.days-forecast {
     display: inline-block;
     width: 25%;
+    margin-top: 20px;
     padding: 5px;
 }
 
